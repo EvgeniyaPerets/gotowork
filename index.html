@@ -4,9 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <title>Go To Work</title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <section class="left_menu">
+      <div class="left_menu__bg"></div>
+      <div class="left_menu__logo"></div>
+      <div class="left_menu__bottom">
+        <span class="left_menu__title">Gotowork</span>
+        <span class="left_menu__text">Лучшая система для пассивного заработка</span>
+      </div>
+      <ul class="pag">
+        <li class="pag__dote active"></li>
+        <li class="pag__dote"></li>
+        <li class="pag__dote"></li>
+      </ul>
+    </section>
+    <section class="main">
+      <form class="main__login">
+        <h1 class="main__title">Вход в систему</h1>
+        <label class="main__text">Введите данные для входа ниже</label>
+        <div class="main__input input__email">
+          <input name="email"/ type="text" required>
+          <label for="email">Ваш Email</label>
+        </div>
+        <div class="main__input input__pass">
+          <input name="pass"/ type="password" required>
+          <label for="pass">Ваш пароль</label>
+        </div>
+        <label class="main__link js-to-fogot-pass">Забыли пароль?</label>
+        <button class="main__button main__button_submit" type="submit">Войти</button>
+        <button class="main__button main__button_acc js-to-new-account" type="button">Создать аккаунт</button>
+      </form>
+    </section>
+  </div>
 </body>
+<script src="index.js"></script>
 </html>
