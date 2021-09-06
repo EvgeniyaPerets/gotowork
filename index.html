@@ -23,23 +23,25 @@
       </ul>
     </section>
     <section class="main">
-      <form class="main__login">
+      <form class="main__login js-login-form" action="/">
         <h1 class="main__title">Вход в систему</h1>
         <label class="main__text">Введите данные для входа ниже</label>
         <div class="main__input input__email">
           <input name="email"/ type="text" required>
           <label for="email">Ваш Email</label>
+          <span class="input_msg_error">Неверно введен email</span>
         </div>
         <div class="main__input input__pass">
           <input name="pass"/ type="password" required>
           <label for="pass">Ваш пароль</label>
+          <span class="input_msg_error">Неверно введен пароль</span>
         </div>
         <label class="main__link js-to-fogot-pass">Забыли пароль?</label>
-        <button class="main__button main__button_submit" type="submit">Войти</button>
+        <button class="main__button main__button_submit js-button_submit" type="submit">Войти</button>
         <button class="main__button main__button_acc js-to-new-account" type="button">Создать аккаунт</button>
       </form>
     </section>
   </div>
 </body>
-<script src="index.js"></script>
+<script src="./index.js"></script>
 </html>

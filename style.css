@@ -190,3 +190,29 @@ body {
   border: 1px solid #4163DC;
   background: #fff;
 }
+
+.input_msg_error {
+  display: none;
+  color: #E95050;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  bottom: -34px;
+}
+
+.input__error.input__email {
+  margin-bottom: 48px;
+}
+
+.input__error input {
+  background: #FFEDED;
+  border: 1px solid #FFAAAA;
+}
+
+.input__error label {
+  color: #E95050;
+}
+
+.input__error span {
+  display: block;
+}
