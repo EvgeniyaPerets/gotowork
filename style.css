@@ -25,9 +25,9 @@ body {
   background: url(./img/left-menu.png);
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 100vh;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-size: cover;
@@ -204,6 +204,7 @@ body {
   margin-bottom: 48px;
 }
 
+.input__error input:valid,
 .input__error input {
   background: #FFEDED;
   border: 1px solid #FFAAAA;
@@ -215,4 +216,98 @@ body {
 
 .input__error span {
   display: block;
+}
+
+.menu__logo-black {
+  position: absolute;
+  width: 142px;
+  height: 32px;
+  background: url(./img/logo-black.svg);
+  top: 20px;
+  left: 24px;
+  display: none;
+}
+
+@media (max-width: 840px) {
+  .main__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 100px;
+  }
+
+  .left_menu {
+    display: none;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .menu__logo-black {
+    display: block;
+  }
+
+  .main__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .main__login {
+    height: 100vh;
+    width: 564px;
+    padding: 0 16px 16px;
+  }
+
+  .main__button_submit{
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .input_msg_error {
+    bottom: -22px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .main__link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .main__input input {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .main__input.input__pass {
+    margin-bottom: 8px;
+  }
+
+  .input__error.input__email {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .main__login {
+    width: 100%;
+  }
+
+  .main__input input {
+    width: 100%;
+  }
+
+  .main__button_acc {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    width: calc(100% - 32px);
+  }
+
+  .main__button_submit {
+    position: absolute;
+    bottom: 60px;
+    left: 16px;
+    width: calc(100% - 32px);
+  }
 }
