@@ -4,11 +4,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
   <title>Go To Work</title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <section class="left_menu">
+      <div class="left_menu__bg"></div>
+      <div class="left_menu__logo"></div>
+      <div class="left_menu__bottom">
+        <span class="left_menu__title">Gotowork</span>
+        <span class="left_menu__text">Лучшая система для пассивного заработка</span>
+      </div>
+      <ul class="pag">
+        <li class="pag__dote active"></li>
+        <li class="pag__dote"></li>
+        <li class="pag__dote"></li>
+      </ul>
+    </section>
+    <section class="main">
+      <label class="main__link registration__link js-to-login">Вернуть к авторизации</label>
+      <div class="menu__logo-black"></div>
+      <form class="main__login registration__step_first js-registration" action="/">
+        <h1 class="main__title">Регистрация <span class="registration_steps"><span class="step">Шаг <span class="js-step">1</span></span> из 3</span></h1>
+        <label class="main__text js-step-first">Что зарегистрироваться в системе<br>надо ввести некоторые данные</label>
+        <div class="input__wrapper js-step-first">
+          <div class="main__input input__name">
+            <input name="name"/ type="text" required>
+            <label for="name">Фамилия, имя и отчество</label>
+            <span class="input_msg_error">Поле пустое</span>
+          </div>
+          <div class="main__input input__phone">
+            <input name="phone"/ type="text" required>
+            <label for="phone">Телефон</label>
+            <span class="input_msg_error">Неверно введен телефон</span>
+          </div>
+          <div class="main__input input__email">
+            <input name="email"/ type="text" required>
+            <label for="email">Ваш Email</label>
+            <span class="input_msg_error">Неверно введен email</span>
+          </div>
+        </div>
+        <button class="main__button main__button_white registration__btn js-to-step-second js-step-first" type="button">Продолжить</button>
+        <!-- шаг 2 -->
+        <label class="main__text js-step-second dn">Придумайте надежный пароль. Пароль должен<br>состоять минимум из 8 символом, иметь цифры и буквы</label>
+        <div class="input__wrapper input__wrapper--step-second js-step-second dn">
+          <div class="main__input input__password">
+            <input name="password"/ type="password" required>
+            <label for="password">Введите пароль</label>
+            <span class="input_msg_error">Поле пустое</span>
+          </div>
+          <div class="main__input input__pass-repeat">
+            <input name="pass-repeat"/ type="password" required>
+            <label for="pass-repeat">Повторите пароль</label>
+            <span class="input_msg_error">Поле пустое или пароли не совпадают</span>
+          </div>
+        </div>
+        <button class="main__button main__button_white registration__btn js-to-step-third js-step-second dn" type="button">Продолжить</button>
+      </form>
+
+      <!-- <label class="main__text">Что бы завершить регистрацию, введите код подтверждения, который пришел на ваш Email</label>
+      <label class="main__text">Введите данные для входа ниже</label> -->
+    </section>
+  </div>
 </body>
 <script src="../js/registration.index.js"></script>
 </html>

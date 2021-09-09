@@ -15,6 +15,8 @@ body {
   margin: 0;
 }
 
+
+/* авторизация */
 .wrapper {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -181,7 +183,7 @@ body {
   margin-bottom: 20px;
 }
 
-.main__button_acc {
+.main__button_white {
   color: #4163DC;
   font-weight: 600;
   font-size: 14px;
@@ -297,7 +299,7 @@ body {
     width: 100%;
   }
 
-  .main__button_acc {
+  .main__button_white {
     position: absolute;
     bottom: 16px;
     left: 16px;
@@ -310,4 +312,69 @@ body {
     left: 16px;
     width: calc(100% - 32px);
   }
+}
+
+/* регистрация */
+
+.dn {
+  display: none !important;
+}
+
+.registration__btn {
+  height: 60px;
+}
+
+.registration_steps {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #75758A;
+  margin-left: 14px;
+  top: -3px;
+}
+
+.registration_steps .step{
+  background: #41DC9A;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.registration__link {
+  position: absolute;
+  top: 27px;
+  right: 58px;
+}
+
+.registration__step_first {
+  width: 532px;
+}
+.registration__step_first .input__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.registration__step_first .input__wrapper input{
+  width: 100%;
+}
+
+.registration__step_first .input__wrapper .input__name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.registration__step_first .input__wrapper .input__phone {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.registration__step_first .input__wrapper .input__email {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.input__wrapper--step-second.input__wrapper {
+  display: block;
 }
