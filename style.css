@@ -93,6 +93,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .main__title {
@@ -377,4 +378,9 @@ body {
 
 .input__wrapper--step-second.input__wrapper {
   display: block;
+}
+
+.registration__timer.no-active {
+  color: #75758A;
+  pointer-events: none;
 }
