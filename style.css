@@ -231,6 +231,76 @@ body {
   display: none;
 }
 
+/* регистрация */
+
+.dn {
+  display: none !important;
+}
+
+.registration__btn {
+  height: 60px;
+}
+
+.registration_steps {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #75758A;
+  margin-left: 14px;
+  top: -3px;
+}
+
+.registration_steps .step{
+  background: #41DC9A;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.registration__link {
+  position: absolute;
+  top: 27px;
+  right: 58px;
+  z-index: 10;
+}
+
+.registration__step_first {
+  width: 532px;
+}
+
+.registration__step_first .input__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 12px;
+}
+
+.registration__step_first .input__wrapper input{
+  width: 100%;
+}
+.input__wrapper--step-second {
+  margin-bottom: 28px;
+}
+
+.input__wrapper--step-second.input__wrapper {
+  display: block;
+}
+
+.registration__timer.no-active {
+  color: #75758A;
+  pointer-events: none;
+}
+
+.registration__step_first .input__error {
+  margin-bottom: 28px;
+}
+
+.registration__step_first .input__error span {
+  bottom: -24px;
+}
+
+/* мобилка*/
+
 @media (max-width: 840px) {
   .main__title {
     font-size: 24px;
@@ -289,6 +359,12 @@ body {
   .input__error.input__email {
     margin-bottom: 40px;
   }
+
+  .registration__step_third {
+    position: absolute;
+    padding: 0 16px 16px;
+    top: 150px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -300,87 +376,61 @@ body {
     width: 100%;
   }
 
-  .main__button_white {
+  .registration__step_fourth .main__button_white,
+  .js-login-form .main__button_white {
     position: absolute;
     bottom: 16px;
     left: 16px;
     width: calc(100% - 32px);
   }
 
-  .main__button_submit {
+  .main__button_submit:not(.js-to-step-fourth) {
     position: absolute;
     bottom: 60px;
     left: 16px;
     width: calc(100% - 32px);
   }
+
+  .registration_steps {
+    display: block;
+    line-height: 42px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .registration__link {
+    top: 20px;
+    right: 17px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100px;
+  }
+
+  .registration__step_third {
+    top: 193px;
+    height: auto;
+  }
 }
 
-/* регистрация */
+@media (min-width: 560px) {
+  .registration__step_first .input__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
 
-.dn {
-  display: none !important;
-}
+  .registration__step_first .input__wrapper .input__name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
-.registration__btn {
-  height: 60px;
-}
+  .registration__step_first .input__wrapper .input__phone {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 
-.registration_steps {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #75758A;
-  margin-left: 14px;
-  top: -3px;
-}
-
-.registration_steps .step{
-  background: #41DC9A;
-  border-radius: 8px;
-  color: #fff;
-  padding: 8px 12px;
-}
-
-.registration__link {
-  position: absolute;
-  top: 27px;
-  right: 58px;
-}
-
-.registration__step_first {
-  width: 532px;
-}
-.registration__step_first .input__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 20px;
-}
-
-.registration__step_first .input__wrapper input{
-  width: 100%;
-}
-
-.registration__step_first .input__wrapper .input__name {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.registration__step_first .input__wrapper .input__phone {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.registration__step_first .input__wrapper .input__email {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.input__wrapper--step-second.input__wrapper {
-  display: block;
-}
-
-.registration__timer.no-active {
-  color: #75758A;
-  pointer-events: none;
+  .registration__step_first .input__wrapper .input__email_first {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
