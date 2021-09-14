@@ -299,6 +299,19 @@ body {
   bottom: -24px;
 }
 
+/* восстановление пароля */
+
+.password_recovery__link {
+  text-decoration: none;
+}
+
+.password_recovery__step_first .input__wrapper {
+  margin-bottom: 28px;
+}
+
+.password_recovery__step_first .input__wrapper .input__error {
+  margin-bottom: 46px;
+}
 /* мобилка*/
 
 @media (max-width: 840px) {
@@ -409,6 +422,10 @@ body {
   .registration__step_third {
     top: 193px;
     height: auto;
+  }
+
+  .mobile_hide {
+    display: none;
   }
 }
 

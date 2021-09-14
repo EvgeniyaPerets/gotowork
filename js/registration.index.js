@@ -159,8 +159,6 @@ btnToStepThrid.addEventListener('click', e => {
             .addEventListener('click', handlerToStep)
         handlerTimer()
     }
-
-
 })
 
 btnToStepFourth.addEventListener('click', e => {
