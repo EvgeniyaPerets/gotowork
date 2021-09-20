@@ -27,6 +27,7 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
+  min-height: 746px;
 }
 
 .left_menu__bg {
@@ -122,6 +123,7 @@ body {
 
 .main__input {
   margin-bottom: 16px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .main__input input {
@@ -255,6 +257,7 @@ body {
   color: #75758A;
   margin-left: 14px;
   top: -3px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .registration_steps .step{
@@ -553,6 +556,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .dashbord__list_item__price .text {
@@ -579,6 +583,246 @@ body {
   color: #fff;
 }
 
+.open_popup {
+  overflow: hidden;
+}
+
+.popup_bg {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__wrapp {
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.popup {
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 40px;
+
+  width: 100%;
+  height: 100%;
+  max-height: inherit;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.popup::-webkit-scrollbar {
+  width: 0;
+}
+.popup__label {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.popup__close {
+  width: 89px;
+  height: 40px;
+  position: absolute;
+  top: 48px;
+  right: 40px;
+  z-index: 10;
+}
+
+.popup__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #2E2E40;
+}
+
+.popup__text {
+  font-size: 18px;
+  line-height: 28px;
+  color: #75758A;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.popup__reward_wrapp {
+  border-top: 1px solid #ECECF4;
+  border-bottom: 1px solid #ECECF4;
+  margin-bottom: 60px;
+  padding: 19px 0;
+  display: flex;
+}
+
+.reward__subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9895AD;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.popup__reward_wrapp .text {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #41DC9A;
+  display: block;
+  margin-right: 12px;
+}
+
+.reward_wrapp .price {
+  background: #41DC9A;
+  border-radius: 8px;
+  color: #fff;
+  display: block;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.reward_wrapp {
+  margin-right: 64px;
+}
+
+.popup__reward_wrapp .reward{
+  display: flex;
+  align-items: center;
+}
+
+.confirmation__period .reward__subtitle {
+  margin-bottom: 16px;
+}
+
+.popup__subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2E2E40;
+  margin-bottom: 32px;
+}
+
+.popup__text_small {
+  font-size: 14px;
+  line-height: 28px;
+  color: #75758A;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.popup__benefits_list {
+  margin-bottom: 60px;
+  padding-inline-start: 18px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #75758A;
+}
+
+.popup .main__button {
+  margin-bottom: 16px;
+}
+
+.popup__ref_link {
+  border: 1px solid #CACAD6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 6px 24px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.ref_link__text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #9595AD;
+}
+
+.ref_link {
+  font-size: 18px;
+  line-height: 28px;
+  color: #2E2E40;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.ref_link__icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  display: block;
+  top: 14px;
+  right: 16px;
+  background: url(./img/ref_link.svg);
+}
+
+.menu__burger {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  background: url(./img/menu__burger.svg);
+}
+
+.left_menu__btn_close {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.left_menu__btn_close::after,
+.left_menu__btn_close::before {
+  content: '';
+  border-radius: 8px;
+  width: 2px;
+  height: 16px;
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.left_menu__btn_close::before {
+  transform: rotate(-45deg);
+}
+
+.left_menu.open {
+  display: block;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.left_menu.open .left_menu__wrapp {
+  width: 100%;
+}
+
+.left_menu.open .left_menu__bg {
+  border-radius: 0;
+}
+
+.dashbord .left_menu.open .left_menu__logo::before {
+  width: 100vh;
+}
+
 /* мобилка*/
 
 @media (max-width: 840px) {
@@ -596,6 +840,8 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .left_menu__btn_close,
+  .menu__burger,
   .menu__logo-black {
     display: block;
   }
@@ -644,6 +890,46 @@ body {
     position: absolute;
     padding: 0 16px 16px;
     top: 150px;
+  }
+
+  .dashbord__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 40px;
+  }
+
+  .dashbord__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .dashbord__list_item__img {
+    height: 40px;
+    margin-bottom: 12px;
+  }
+
+  .dashbord__list_item__img img {
+    transform: scale(0.7);
+    left: -20px;
+    display: block;
+  }
+
+  .dashbord__list_item__title {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .dashbord__list_item__btn {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .popup__wrapp {
+    width: 100%;
+  }
+
+  .popup {
+    border-radius: 0;
   }
 }
 
@@ -728,5 +1014,99 @@ body {
 @media (min-width: 1920px) {
   .dashbord__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 841px) and (max-width: 970px) {
+  .dashbord__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 599px) {
+  .dashbord__list {
+    grid-template-columns: 1fr;
+  }
+
+  .popup__close span {
+    display: none;
+  }
+
+  .popup__close {
+    width: 32px;
+    height: 32px;
+    top: 24px;
+    right: 16px;
+  }
+
+  .popup__close::after,
+  .popup__close::before {
+    content: '';
+    border-radius: 8px;
+    width: 2px;
+    height: 16px;
+    position: absolute;
+    top: 7px;
+    left: 14px;
+    transform: rotate(45deg);
+    background-color: #4163DC;
+  }
+
+  .popup__close::before {
+    transform: rotate(-45deg);
+  }
+
+  .popup {
+    padding: 24px 16px;
+  }
+
+  .popup__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .popup__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .popup__reward_wrapp {
+    flex-direction: column;
+  }
+
+  .reward__subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .reward {
+    margin-bottom: 40px;
+  }
+
+  .popup__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .popup__benefits_list {
+    margin-bottom: 40px;
+  }
+
+  .ref_link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .popup__wrapp .main__button_submit {
+    position: relative;
+    width: 100%;
+    bottom: auto;
+    left: auto;
+  }
+
+  .popup__label {
+    margin-bottom: 32px;
+    height: 40px;
   }
 }

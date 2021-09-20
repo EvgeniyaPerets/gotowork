@@ -11,6 +11,7 @@
   <div class="wrapper dashbord">
     <section class="left_menu">
       <div class="left_menu__wrapp">
+        <div class="left_menu__btn_close js-close-menu"></div>
         <div class="left_menu__bg"></div>
         <div class="left_menu__logo"></div>
         <div class="left_menu_list">
@@ -42,6 +43,8 @@
       </div>
     </section>
     <section class="main dashbord__main">
+      <div class="menu__logo-black"></div>
+      <div class="menu__burger js-open-menu"></div>
       <h1 class="dashbord__title">Предложения</h1>
       <span class="dashbord__text">Доступные предложения</span>
       <div class="dashbord__list_wrapper">
@@ -58,7 +61,7 @@
                 <span class="text">гарантированное вознаграждение</span>
               </div>
             </div>
-            <button class="dashbord__list_item__btn">Подробнее</button>
+            <button class="dashbord__list_item__btn js-open-popup">Подробнее</button>
           </li>
           <li class="dashbord__list_item">
             <div class="dashbord__list_item__img">
@@ -72,7 +75,7 @@
                 <span class="text">гарантированное вознаграждение</span>
               </div>
             </div>
-            <button class="dashbord__list_item__btn">Подробнее</button>
+            <button class="dashbord__list_item__btn js-open-popup">Подробнее</button>
           </li>
           <li class="dashbord__list_item">
             <div class="dashbord__list_item__img">
@@ -86,7 +89,7 @@
                 <span class="text">гарантированное вознаграждение</span>
               </div>
             </div>
-            <button class="dashbord__list_item__btn">Подробнее</button>
+            <button class="dashbord__list_item__btn js-open-popup">Подробнее</button>
           </li>
           <li class="dashbord__list_item">
             <div class="dashbord__list_item__img">
@@ -100,7 +103,7 @@
                 <span class="text">гарантированное вознаграждение</span>
               </div>
             </div>
-            <button class="dashbord__list_item__btn">Подробнее</button>
+            <button class="dashbord__list_item__btn js-open-popup">Подробнее</button>
           </li>
           <li class="dashbord__list_item">
             <div class="dashbord__list_item__img">
@@ -114,7 +117,7 @@
                 <span class="text">гарантированное вознаграждение</span>
               </div>
             </div>
-            <button class="dashbord__list_item__btn">Подробнее</button>
+            <button class="dashbord__list_item__btn js-open-popup">Подробнее</button>
           </li>
           <li class="dashbord__list_item">
             <div class="dashbord__list_item__img">
@@ -128,12 +131,54 @@
                 <span class="text">гарантированное вознаграждение</span>
               </div>
             </div>
-            <button class="dashbord__list_item__btn">Подробнее</button>
+            <button class="dashbord__list_item__btn js-open-popup">Подробнее</button>
           </li>
         </ul>
       </div>
     </section>
   </div>
+  <div class="popup_bg dn">
+    <div class="popup__wrapp">
+      <div class="popup">
+        <div class="popup__label">
+          <img src="../img/labels/2.png">
+        </div>
+        <button class="popup__close main__button main__button_white js-close-popup"><span>Закрыть</span></button>
+        <h1 class="popup__title">Вебзайм</h1>
+        <span class="popup__text">Мы с 1999 года предоставляем нашим клиентам современный онлайн сервис микрофинансирования. За время работы к нам обратились уже более 1 500 000 заемщиков. <br><br>
+          Статус МФК присваивается Центральным Банком РФ и свидетельствуето высокой надежности микрофинансовой организации.</span>
+        <div class="popup__reward_wrapp">
+          <div class="reward_wrapp">
+            <span class="reward__subtitle">Вознагрождение</span>
+            <div class="reward">
+              <span class="text">до</span>
+              <span class="price">1 200 ₽</span>
+            </div>
+          </div>
+          <div class="confirmation__period">
+            <span class="reward__subtitle">Срок подтверждения</span>
+            <span class="text">в течении 3-х суток</span>
+          </div>
+        </div>
+        <h3 class="popup__subtitle">Заголовок</h3>
+        <span class="popup__text_small"> Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участникамив отношении поставленных задач. Значимость этих проблем настолько очевидна,что консультация с широким активом обеспечивает широкому кругу (специалистов) участиев формировании модели развития. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.</span>
+        <ul class="popup__benefits_list">
+          <li class="popup__benefits_list__item">Идейные соображения </li>
+          <li class="popup__benefits_list__item">Значимость проблем</li>
+          <li class="popup__benefits_list__item">Повседневная практика</li>
+          <li class="popup__benefits_list__item">Эксперимент проверки позиций</li>
+          <li class="popup__benefits_list__item">Постановление задач</li>
+        </ul>
+        <button class="main__button main__button_submit js-arrange">Оформить</button>
+        <div class="popup__ref_link">
+          <span class="ref_link__text">Реферальная ссылка</span>
+          <span class="ref_link">https://figma.fun/PVB30H</span>
+          <span class="ref_link__icon"></span>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="../js/dashbord.index.js"></script>
+<script src="../js/menu.index.js"></script>
 </html>
