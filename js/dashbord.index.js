@@ -1,7 +1,6 @@
 const dashbord = document.querySelector('.dashbord')
 const popup = document.querySelector('.popup_bg')
 const openPopup = document.querySelectorAll('.js-open-popup')
-const openMenu = document.querySelector('.js-open-menu')
 
 popup.addEventListener('click', e => {
     e.preventDefault()

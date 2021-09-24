@@ -53,32 +53,6 @@ const handlerTimer = () => {
     }, 1000)
 }
 
-const validatePhone = inputText => {
-    const inputStripped = inputText.replace(/\D/g,'')
-    const phoneReg = /^[0-9()-.\s]+$/
-    return phoneReg.test(inputText) && inputStripped.length >= 10
-}
-
-const validatePass = password => {
-    const res = [false, false, false]
-    const regexL = /^(?=.*[a-z]).+$/; // Lowercase character pattern
-    const regex = /^(?=.*[A-Z]).+$/; // Uppercase character pattern
-
-    if( password.length >= 8 ) {
-        res[0] = true
-    }
-
-    if( regexL.test(password) ) {
-        res[1] = true
-    }
-
-    if( regex.test(password) ) {
-        res[2] = true
-    }
-
-    return res.indexOf(false) === -1
-}
-
 document.querySelector('.js-to-login.js-step-first')
     .addEventListener('click', handlerToStep)
 
