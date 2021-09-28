@@ -1,0 +1,102 @@
+.pickmeup {
+    background: #FFFFFF;
+    border: 1px solid #CACAD6;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 60px -24px rgba(119, 119, 154, 0.5);
+    border-radius: 16px;
+    width: 560px;
+    height: 300px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+    margin-top: 8px;
+}
+
+.pickmeup .pmu-instance .pmu-not-in-month.pmu-selected,
+.pickmeup .pmu-instance .pmu-today {
+    background: transparent;
+}
+
+.pickmeup .pmu-instance .pmu-not-in-month.pmu-button {
+    color: #CBCBCF;
+}
+
+.pickmeup .pmu-instance .pmu-button {
+    color: #2E2E40;
+}
+
+.pickmeup .pmu-instance .pmu-selected {
+    background: #E3E9FE;
+}
+
+.pickmeup .pmu-instance .pmu-button:hover {
+    background: #4163DC;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.pickmeup .pmu-instance .pmu-prev.pmu-button,
+.pickmeup .pmu-instance .pmu-next.pmu-button {
+    border: 1px solid #ECECF4;
+    border-radius: 8px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.pickmeup .pmu-instance .pmu-prev.pmu-button:hover,
+.pickmeup .pmu-instance .pmu-next.pmu-button:hover {
+    background: transparent;
+}
+
+.pickmeup .pmu-instance nav {
+    margin-bottom: 20px;
+}
+
+.pickmeup .pmu-instance .pmu-day-of-week {
+    color: #CBCBCF;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #ECECF4;
+    justify-content: space-evenly;
+    margin-bottom: 14px;
+}
+
+.pickmeup .pmu-days {
+    font-size: 12px;
+    line-height: 16px;
+    display: grid;
+    grid-template-columns: repeat(7 ,1fr);
+}
+
+.pickmeup .pmu-instance .pmu-day-of-week *, .pickmeup .pmu-instance .pmu-days * {
+    width: auto;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pickmeup .pmu-instance {
+    width: 244px;
+    height: auto;
+    padding: 0;
+
+}
+
+@media (max-width: 840px) {
+    .pickmeup {
+        left: 16px !important;
+        z-index: 10;
+        width: 290px;
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 32px;
+    }
+}
