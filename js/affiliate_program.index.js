@@ -23,7 +23,6 @@ const alertEmail = alert.querySelector('.email')
 const sendEmail = document.querySelectorAll('.js-send-email')
 
 sendEmail.forEach(el => {
-    console.log(el);
     el.addEventListener('click', e => {
         e.preventDefault()
 
