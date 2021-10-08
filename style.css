@@ -1266,6 +1266,12 @@ body {
   margin-right: 12px;
 }
 
+/* Профиль */
+
+.profile__title {
+  margin-bottom: 40px;
+}
+
 /* мобилка*/
 
 @media (max-width: 840px) {
