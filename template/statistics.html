@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../js/plugins/datapicker/pickmeup.css">
+  <link rel="stylesheet" href="../js/plugins/datapicker/pickmeup.local.css">
+  <link rel="stylesheet" href="../js/plugins/vanillaSelectBox/vanillaSelectBox.css">
+  <link rel="stylesheet" href="../js/plugins/vanillaSelectBox/vanilaSelectBox.local.css">
   <title>Go To Work</title>
 </head>
 <body>
@@ -47,22 +51,28 @@
       <div class="menu__burger js-open-menu"></div>
       <h1 class="dashbord__title statistics__title">Статистика</h1>
       <div class="tab__titles">
-        <div class="tab__title my_stats active">Моя статистика</div>
-        <div class="tab__title friends_stats">Статистика друзей </div>
+        <div class="tab__title my_stats active js-tabs" data-active="my_stats" data-disabled="friends_stats">Моя статистика</div>
+        <div class="tab__title friends_stats js-tabs" data-active="friends_stats" data-disabled="my_stats">Статистика друзей </div>
       </div>
       <div class="affiliate_program__wrapp statistics__wrapp">
         <div class="affiliate_program__friends_list my_stats__body">
             <form action="/" class="statistics__form">
                 <div class="input__wrapper">
                     <div class="main__input input__datapiker">
-                        <input name="datapiker"/ type="text" required>
-                        <label for="datapiker">Дата заявки</label>
+                        <input name="datapiker" class="datapiker" type="text" placeholder="Дата заявки" required>
+                        <span class="calendar"></span>
                     </div>
                 </div>
-                <div class="input__wrapper js-step-first">
-                    <div class="main__input input__datapiker">
-                        <input name="datapiker"/ type="text" required>
-                        <label for="datapiker">Статус</label>
+                <div class="input__wrapper ">
+                    <div class="main__input select__main">
+                        <select name="stats" id="my_stats" multiple size="6">
+                            <option value="Выплачено">Выплачено</option>
+                            <option value="На проверке">На проверке</option>
+                            <option value="Готовится к выплате">Готовится к выплате</option>
+                            <option value="Принято">Принято</option>
+                            <option value="Отклонено">Отклонено</option>
+                            <option value="Отказано в выплате">Отказано в выплате</option>
+                        </select>
                     </div>
                 </div>
             </form>
@@ -152,12 +162,148 @@
                 </div>
                 </div>
             </div>
-      </div>
+        </div>
+        <div class="affiliate_program__friends_list friends_stats__body dn">
+            <form action="/" class="statistics__form">
+                <div class="input__wrapper">
+                    <div class="main__input input__datapiker-two">
+                        <input name="datapiker-two" class="datapiker-two" type="text" placeholder="Дата заявки"  required>
+                        <span class="calendar"></span>
+                    </div>
+                </div>
+                <div class="input__wrapper">
+                    <div class="main__input select__main">
+                        <select name="stats" id="friends_stats" multiple size="6">
+                            <option value="Выплачено">Выплачено</option>
+                            <option value="На проверке">На проверке</option>
+                            <option value="Готовится к выплате">Готовится к выплате</option>
+                            <option value="Принято">Принято</option>
+                            <option value="Отклонено">Отклонено</option>
+                            <option value="Отказано в выплате">Отказано в выплате</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input__wrapper">
+                    <div class="main__input select__main">
+                        <select name="stats" id="friends_name" multiple size="6">
+                            <option value="Роман Николаевич Пеов">Роман Николевич Петров</option>
+                            <option value="Роман Николаевич Птров">Роман Никлаевич Петров</option>
+                            <option value="Роман НиколаевичПетров">Роман Ниолаевич Петров</option>
+                            <option value="Роман Николаевич Петров">Роман иколаевич Петров</option>
+                            <option value="Роман Николаеви Петров">Роман иколаевич Петров</option>
+                            <option value="Роман Николаевч Петров">РоманНиколаевич Петров</option>
+                            <option value="Роман Николаеич Петров">Рома Николаевич Петров</option>
+                            <option value="Роман Николавич Петров">Ромн Николаевич Петров</option>
+                            <option value="Роман Николевич Петров">Роан Николаевич Петров</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <ul class="statistics__list_wrapp">
+                <li class="statistics__list__item __header">
+                    <div class="row __date">Дата заявки</div>
+                    <div class="row __id">ID заявки</div>
+                    <div class="row __name">ФИО друга</div>
+                    <div class="row __name_offers">Название</div>
+                    <div class="row __reward">Вознаграждение</div>
+                    <div class="row __status">Статус</div>
+                </li>
+                <li class="statistics__list__item">
+                    <div class="row __date">7 Марта 2021</div>
+                    <div class="row __id">7594136</div>
+                    <div class="row __name"><span>РП</span>Роман Николаевич Петров</div>
+                    <div class="row __name_offers">Вебзайм</div>
+                    <div class="row __reward">10 000₽</div>
+                    <div class="row __status"><span class="paid">ВЫПЛАЧЕНО</span></div>
+                </li>
+                <li class="statistics__list__item">
+                    <div class="row __date">7 Марта 2021</div>
+                    <div class="row __id">7594136</div>
+                    <div class="row __name"><span>РП</span>Роман Николаевич Петров</div>
+                    <div class="row __name_offers">Вебзайм</div>
+                    <div class="row __reward">10 000₽</div>
+                    <div class="row __status"><span class="on_check">НА ПРОВЕРКЕ</span></div>
+                </li>
+                <li class="statistics__list__item">
+                    <div class="row __date">7 Марта 2021</div>
+                    <div class="row __id">7594136</div>
+                    <div class="row __name"><span>РП</span>Роман Николаевич Петров</div>
+                    <div class="row __name_offers">Вебзайм</div>
+                    <div class="row __reward">10 000₽</div>
+                    <div class="row __status"><span class="preparing_for_payment">ГОТОВИТСЯ К ВЫПЛАТЕ</span></div>
+                </li>
+                <li class="statistics__list__item">
+                    <div class="row __date">7 Марта 2021</div>
+                    <div class="row __id">7594136</div>
+                    <div class="row __name"><span>РП</span>Роман Николаевич Петров</div>
+                    <div class="row __name_offers">Вебзайм</div>
+                    <div class="row __reward">10 000₽</div>
+                    <div class="row __status"><span class="accepted">ПРИНЯТО</span></div>
+                </li>
+                <li class="statistics__list__item">
+                    <div class="row __date">7 Марта 2021</div>
+                    <div class="row __id">7594136</div>
+                    <div class="row __name"><span>РП</span>Роман Николаевич Петров</div>
+                    <div class="row __name_offers">Вебзайм</div>
+                    <div class="row __reward">10 000₽</div>
+                    <div class="row __status"><span class="declined">ОТКЛОНЕНО</span></div>
+                </li>
+                <li class="statistics__list__item">
+                    <div class="row __date">7 Марта 2021</div>
+                    <div class="row __id">7594136</div>
+                    <div class="row __name"><span>РП</span>Роман Николаевич Петров</div>
+                    <div class="row __name_offers">Вебзайм</div>
+                    <div class="row __reward">10 000₽</div>
+                    <div class="row __status"><span class="refused_in_payment">ОТКАЗАНО В ВЫПЛАТЕ</span></div>
+                </li>
+                <li class="statistics__list__item">
+                    <div class="row __date">7 Марта 2021</div>
+                    <div class="row __id">7594136</div>
+                    <div class="row __name"><span>РП</span>Роман Николаевич Петров</div>
+                    <div class="row __name_offers">Вебзайм</div>
+                    <div class="row __reward">10 000₽</div>
+                    <div class="row __status"><span class="paid">ВЫПЛАЧЕНО</span></div>
+                </li>
+            </ul>
+            <div class="affiliate_program__friends_list__pag_wrapp">
+                <div class="pagination_steps_index">1 – 10 из 28</div>
+                <div class="pagination_steps">
+                <span class="pagination_steps__text">Вы на странице</span>
+                <div class="pagination_steps__select_wrapp">
+                    <select class="pagination_steps__select" type="text">
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    </select>
+                </div>
+                <div class="pagination_steps__btns">
+                    <div class="pagination_steps__btn pagination_steps__prev not_active">
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 1L1 5M1 5L5 9M1 5L11 5" stroke="#4163DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </div>
+                    <div class="pagination_steps__btn pagination_steps__next">
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 9L11 5M11 5L7 1M11 5L1 5" stroke="#4163DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
       </div>
     </section>
   </div>
 </body>
 <script src="../js/helper.js"></script>
+<<<<<<< HEAD
+=======
+<script src="../js/plugins/datapicker/pickmeup.min.js"></script>
+<script src="../js/plugins/vanillaSelectBox/vanillaSelectBox.js"></script>
+>>>>>>> 16122021a85c824cfac2b74812c7d4bde153495d
 <script src="../js/menu.index.js"></script>
 <script src="../js/statistics.index.js"></script>
 </html>
