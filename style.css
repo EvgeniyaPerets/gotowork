@@ -1070,7 +1070,7 @@ body {
 }
 
 .affiliate_program .popup__btn_wrapp {
-  height: 40px;
+  height: 44px;
   margin-top: 32px;
   width: 500px;
 }
@@ -1187,14 +1187,11 @@ body {
   color: #2E2E40;
 }
 
-<<<<<<< HEAD
-=======
 .friends_stats__body .statistics__list__item {
   grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr 1fr;
 
 }
 
->>>>>>> 16122021a85c824cfac2b74812c7d4bde153495d
 .statistics__list__item.__header {
   padding: 11px 0;
   border-bottom: 1px solid #ECECF4;
@@ -1257,8 +1254,6 @@ body {
   color: #DD1B0F;
   background: #F8E3E2;
 }
-<<<<<<< HEAD
-=======
 
 .statistics__form {
   margin-top: 32px;
@@ -1277,7 +1272,214 @@ body {
   margin-bottom: 40px;
 }
 
->>>>>>> 16122021a85c824cfac2b74812c7d4bde153495d
+.profile__wrapp {
+  height: 220px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 140px 1fr 199px;
+  padding: 40px 32px;
+  grid-column-gap: 42px;
+}
+
+.profile__wrapp .main__button {
+  width: 199px;
+  margin-top: auto;
+}
+
+.profile__img {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+}
+
+.profile__change_img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url('./img/icon-avatar-change.svg');
+  cursor: pointer;
+  position: absolute;
+  top: 95px;
+  left: 51px;
+}
+
+.profile__name {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.profile__contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 4px;
+  max-width: 400px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #2E2E40;
+}
+
+.phone__label,
+.email__label {
+  color: #9895AD;
+}
+
+.card__wrapp {
+  padding: 40px 32px;
+  flex-direction: column;
+  align-items: baseline;
+  height: auto;
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.card__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background: url(./img/card.svg);
+}
+
+.cardholder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  margin-bottom: 24px;
+}
+
+.cardholder .card {
+  width: 246px;
+  height: 160px;
+  background: #ECECF4;
+  border-radius: 16px;
+}
+
+.cardholder .card__number {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #2E2E40;
+}
+
+.cardholder .card_logo {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 60px;
+  height: 20px;
+  background: url(./img/Visa_Inc._logo.svg);
+}
+
+.cardholder .card__delete {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 32px;
+  height: 32px;
+  background: url(./img/delete_card.svg) no-repeat;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.cardholder .card__delete:hover {
+  opacity: 1;
+}
+
+.cardholder .card__add {
+  width: 246px;
+  height: 160px;
+  border: 1px solid #E8E8ED;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4163DC;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.card__wrapp .main__button {
+  width: 210px;
+}
+
+.add_new_card .popup__wrapp {
+  height: 348px;
+}
+
+.add_new_card .add_card {
+  width: 104px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.edit_profile .add_card {
+  width: 118px;
+}
+
+.add_new_card .popup__close {
+  right: 120px;
+}
+
+.add_new_card .main__input input {
+  width: 100%;
+}
+.edit_profile .popup__close {
+  right: 134px;
+}
+
+.edit_profile .input__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.edit_profile .input__wrapper .input__name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.edit_profile .input__wrapper .input__phone {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.edit_profile .input__wrapper .input__email_first {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.edit_profile .popup__wrapp {
+  height: 404px;
+}
+
+.add_new_card .edit_profile__title {
+  margin-bottom: 40px;
+}
+
+.add_card.mobil_btn {
+  display: none;
+}
+
 /* мобилка*/
 
 @media (max-width: 840px) {
@@ -1648,6 +1850,131 @@ body {
   .affiliate_program .popup__close {
     border: 1px solid #4163DC;
     font-size: 0;
+  }
+
+  .profile__wrapp {
+    height: 340px;
+    margin-bottom: 22px;
+    padding: 24px 16px;
+    grid-template-columns: 1fr;
+    box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.05);
+  }
+
+  .cardholder {
+    grid-template-columns: 1fr;
+  }
+
+  .profile__img {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    transform: scale(0.6);
+  }
+
+  .profile__name {
+    margin-left: 106px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .profile__contacts {
+    grid-template-columns: 1fr;
+  }
+
+  .profile__contacts .phone__label {
+    order: 1;
+  }
+  .profile__contacts .email__label {
+    order: 3;
+  }
+  .profile__contacts .phone {
+    order: 2;
+    margin-bottom: 24px;
+  }
+  .profile__contacts .email {
+    order: 4;
+  }
+
+  .card__wrapp .main__button,
+  .profile__wrapp .main__button {
+    width: 100%;
+  }
+
+  .card__wrapp {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .cardholder {
+    width: 100%;
+  }
+
+  .cardholder .card__add,
+  .cardholder .card {
+    width: auto;
+  }
+
+  .cardholder .card__delete {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 56px;
+    left: calc(100% + 16px);
+    background-position: center;
+  }
+
+  .cardholder .card.showDelBtn .card__delete {
+    opacity: 1;
+  }
+  .cardholder .card.showDelBtn::before {
+    content: '';
+    position: absolute;
+    right: -72px;
+    width: 56px;
+    height: 100%;
+    background: #E95050;
+    border-radius: 8px;
+  }
+
+  .cardholder .card.showDelBtn {
+    transform: translateX(-70px);
+  }
+
+  .edit_profile .input__wrapper {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+
+  }
+
+  .edit_profile .input__wrapper .input__email_first {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .add_new_card .affiliate_program__no_friends_added {
+    width: 100%;
+  }
+
+  .add_card:not(.mobil_btn) {
+    display: none;
+  }
+
+  .add_card.mobil_btn {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .add_new_card .popup__close,
+  .edit_profile .popup__close {
+    right: 0;
   }
 }
 

@@ -3,26 +3,6 @@ const btnToStepSecond = document.querySelector('.js-to-step-second')
 const btnToStepThrid = document.querySelector('.js-to-step-third')
 const btnToStepFourth = document.querySelector('.js-to-step-fourth')
 
-const validatePass = password => {
-    const res = [false, false, false]
-    const regexL = /^(?=.*[a-z]).+$/; // Lowercase character pattern
-    const regex = /^(?=.*[A-Z]).+$/; // Uppercase character pattern
-
-    if( password.length >= 8 ) {
-        res[0] = true
-    }
-
-    if( regexL.test(password) ) {
-        res[1] = true
-    }
-
-    if( regex.test(password) ) {
-        res[2] = true
-    }
-
-    return res.indexOf(false) === -1
-}
-
 btnToStepSecond.addEventListener('click', e => {
     e.preventDefault()
 

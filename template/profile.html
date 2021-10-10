@@ -23,7 +23,7 @@
             <ul class="nav_list js-nav-list">
                 <li class="nav_list__item offers">Предложения</li>
                 <li class="nav_list__item affiliate_program">Партнерская программа</li>
-                <li class="nav_list__item statistics active">Статистика</li>
+                <li class="nav_list__item statistics">Статистика</li>
                 <hr class="left_menu__hr">
                 <li class="nav_list__item where_to_begin">С чего начать?</li>
             </ul>
@@ -37,7 +37,7 @@
                 <div class="info__email">thuhang.nute@gmail.com</div>
             </div>
             <ul class="nav_list nav_profile_list">
-                <li class="nav_list__item profile nav_profile_list__item">Мой профиль</li>
+                <li class="nav_list__item profile nav_profile_list__item active">Мой профиль</li>
                 <li class="nav_list__item sign_out nav_profile_list__item">Выйти из аккаунта</li>
                 <hr class="left_menu__hr">
                 <li class="nav_list__item help nav_profile_list__item">Помощь и поддержка</li>
@@ -52,38 +52,93 @@
       <h1 class="dashbord__title profile__title">Мой профиль</h1>
       <div class="affiliate_program__wrapp profile__wrapp">
         <div class="profile__img">
-          <img src="../img/photo.png" alt="">
+          <img src="../img/avatar.png" alt="">
           <span class="profile__change_img"></span>
         </div>
         <div class="profile__info">
           <div class="profile__name">Кшиштовский Андрей Васильевич</div>
           <div class="profile__contacts">
             <div class="phone__label">Телефон</div>
-            <div class="phone">+7( 123) 197-25-00</div>
             <div class="email__label">Email</div>
+            <div class="phone">+7( 123) 197-25-00</div>
             <div class="email">thuhang.nute@gmail.com</div>
           </div>
-          <button class="main__button main__button_white" type="button">Редактировать профиль</button>
         </div>
+        <button class="main__button main__button_white js-edit-profile" type="button">Редактировать профиль</button>
       </div>
       <div class="affiliate_program__wrapp card__wrapp">
         <div class="card__title">Карты</div>
         <div class="cardholder">
           <div class="card">
-            <span class="card__delete"></span>
+            <span class="card__delete js-delete-card"></span>
             <span class="card_logo"></span>
             <span class="card__number"> 1234 88** **** 6780</span>
           </div>
           <div class="card">
-            <span class="card__delete"></span>
+            <span class="card__delete js-delete-card"></span>
             <span class="card_logo"></span>
             <span class="card__number"> 1234 88** **** 6780</span>
           </div>
-          <div class="card__add">Добавить карту</div>
+          <div class="card__add js-add-new-card">Добавить карту</div>
         </div>
         <button class="main__button main__button_white" type="button">История вознаграждений</button>
       </div>
     </section>
+  </div>
+  <div class="popup_bg affiliate_program add_new_card dn">
+    <div class="popup__wrapp">
+      <div class="popup">
+        <div class="affiliate_program__no_friends_added">
+          <h3 class="affiliate_program__title edit_profile__title">Привязка новой карты</h3>
+          <form action="/" class="add_new_card__form">
+            <div class="input__wrapper ">
+              <div class="main__input input__card">
+                <input name="card"/ type="text" required>
+                <label for="card">Номер карты</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="popup__btn_wrapp">
+          <button class="popup__close main__button main__button_white js-close-popup">Отмена</button>
+          <button class="add_card main__button main__button_white js-add_new_card" type="button">Привязать</button>
+        </div>
+        <button class="add_card main__button main__button_white js-add_new_card mobil_btn" type="button">Привязать</button>
+      </div>
+    </div>
+  </div>
+  <div class="popup_bg affiliate_program add_new_card edit_profile dn">
+    <div class="popup__wrapp">
+      <div class="popup">
+        <div class="affiliate_program__no_friends_added">
+          <h3 class="affiliate_program__title edit_profile__title">Редактировать профиль</h3>
+          <form action="/" class="add_new_card__form">
+            <div class="input__wrapper">
+              <div class="main__input input__name">
+                <input name="name"/ type="text" required>
+                <label for="name">Фамилия, имя и отчество</label>
+                <span class="input_msg_error">Поле пустое</span>
+              </div>
+              <div class="main__input input__phone">
+                <input name="phone"/ type="text" required>
+                <label for="phone">Телефон</label>
+                <span class="input_msg_error">Неверно введен телефон</span>
+              </div>
+              <div class="main__input input__email_first">
+                <input name="email_first"/ type="text" required>
+                <label for="email_first">Ваш Email</label>
+                <span class="input_msg_error">Неверно введен email</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="popup__btn_wrapp">
+          <button class="popup__close main__button main__button_white js-close-popup">Отмена</button>
+          <button class="add_card main__button main__button_white js-edit-info" type="button">Редактировать</button>
+        </div>
+        <button class="add_card main__button main__button_white js-edit-info mobil_btn" type="button">Редактировать</button>
+      </div>
+    </div>
   </div>
 </body>
 <script src="../js/helper.js"></script>

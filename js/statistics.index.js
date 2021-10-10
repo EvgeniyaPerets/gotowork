@@ -1,8 +1,6 @@
 
 const btnsTabs = document.querySelectorAll('.js-tabs')
 
-
-
 btnsTabs.forEach(btn => {
     btn.addEventListener('click', e => {
         e.preventDefault
