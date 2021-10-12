@@ -9,6 +9,7 @@ submit.addEventListener('click', e => {
     const password = document.querySelector('.input__pass input').value
     const passwordWrapp = document.querySelector('.input__pass')
 
+    debugger
     if (validateEmail(email)) {
         emailWrapp.classList.remove('input__error')
     } else {
