@@ -1,8 +1,8 @@
 @font-face {
-  font-family: Raleway; 
+  font-family: Raleway;
   src: url(fonts/static/Raleway-Regular.ttf)  format("truetype");
-  font-style: normal; 
-  font-weight: normal; 
+  font-style: normal;
+  font-weight: normal;
  }
 
 * {
@@ -157,6 +157,7 @@ body {
   top: 20px;
   left: 24px;
   transition: .3s;
+  pointer-events: none;
 }
 
 .main__input input:valid + label,
@@ -919,9 +920,17 @@ body {
   border: none;
 }
 
-.affiliate_program__friends_list .input__search label{
+.affiliate_program__friends_list .input__search input:valid,
+.affiliate_program__friends_list .input__search input:focus,
+.affiliate_program__friends_list .input__search input:active {
+  padding: 20px 24px;
+}
+
+.affiliate_program__friends_list .input__search input::placeholder  {
   color: #2E2E40;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .affiliate_program__friends_list__btn {
@@ -1216,7 +1225,7 @@ body {
 .statistics__list__item:not(.__header) .__status {
   font-weight: 800;
   font-size: 10px;
-  line-height: 16px;
+  line-height: 17px;
 }
 
 .statistics__list__item:not(.__header) .__status span {
@@ -1390,12 +1399,21 @@ body {
   width: 32px;
   height: 32px;
   background: url(./img/delete_card.svg) no-repeat;
-  cursor: pointer;
   opacity: 0;
 }
 
-.cardholder .card__delete:hover {
-  opacity: 1;
+
+@media (hover) {
+  .cardholder .card {
+    cursor: pointer;
+  }
+  .card:hover {
+    background: linear-gradient(123.04deg, rgba(233, 80, 80, 0.5) 0%, rgba(233, 80, 80, 0) 21.92%), #ECECF4;
+  }
+
+  .card:hover .card__delete {
+    opacity: 1;
+  }
 }
 
 .cardholder .card__add {
