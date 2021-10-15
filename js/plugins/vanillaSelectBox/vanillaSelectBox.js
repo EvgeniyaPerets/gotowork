@@ -98,7 +98,7 @@ function vanillaSelectBox(domSelector, options) {
         maxWidth: 500,
         minWidth: -1,
         maxHeight: 400,
-        translations: { "all": "All", "items": "items", "selectAll": "Select All", "clearAll": "Clear All" },
+        translations: { "all": "All", "items": "items", "selectAll": "Выбрать всё", "clearAll": "Сбросить всё" },
         search: false,
         placeHolder: "",
         stayOpen: false,
@@ -260,7 +260,7 @@ function vanillaSelectBox(domSelector, options) {
         caret.classList.add("caret");
         caret.style.position = "absolute";
         caret.style.right = "8px";
-        caret.style.marginTop = "8px";
+        caret.style.marginTop = "13px";
 
         if (self.userOptions.stayOpen) {
             caret.style.display = "none";

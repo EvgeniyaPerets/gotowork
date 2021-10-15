@@ -54,6 +54,11 @@
 
 .select__main .vsb-main .title {
     color: #9595AD;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
 }
 
 .select__main .vsb-menu li:hover {

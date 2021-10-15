@@ -204,6 +204,16 @@ body {
   background: #fff;
 }
 
+@media (hover) {
+  .main__button_submit:hover {
+    background: #3BCC8E;
+  }
+
+  .main__button_white:hover {
+    background: #F3F3FA;
+  }
+}
+
 .input_msg_error {
   display: none;
   color: #E95050;
@@ -581,6 +591,12 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+}
+
+@media (hover) {
+  .dashbord__list_item__btn:hover {
+    background: #3E3F54;
+  }
 }
 
 .open_popup {
