@@ -1,0 +1,41 @@
+.select__toolbox {
+    border: 1px solid #ECECF4;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.select__label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Raleway-Medium;
+    height: auto;
+}
+
+.select__arrow {
+    color: #4163DC;
+    bottom: -2px;
+}
+
+.select__arrow:before {
+    font-size: 26px;
+}
+
+
+.select__dropdown {
+    margin-top: 8px;
+    border: 1px solid #CACAD6;
+    background: #fff;
+    color: #2E2E40;
+}
+
+.select__dropdown .select__list {
+    margin: 0;
+}
+
+.select__dropdown .select__list .select__item:hover {
+    background: #E3E9FE;
+}
+.select__dropdown .select__list .select__item--selected {
+    background: #E3E9FE;
+}

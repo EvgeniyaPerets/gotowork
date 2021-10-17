@@ -5,6 +5,13 @@
   font-weight: normal;
  }
 
+ @font-face {
+  font-family: Raleway-Medium;
+  src: url(fonts/static/Raleway-Medium.ttf)  format("truetype");
+  font-style: normal;
+  font-weight: normal;
+ }
+
 * {
   font-family: Raleway;
   position: relative;
@@ -65,6 +72,7 @@ body {
 
 .left_menu__title {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 18px;
   line-height: 28px;
   padding-top: 8px;
@@ -107,6 +115,7 @@ body {
 
 .main__title {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 32px;
   line-height: 40px;
   margin-bottom: 16px;
@@ -188,6 +197,7 @@ body {
   background: #41DC9A;
   border: none;
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 24px;
   line-height: 32px;
   color: #fff;
@@ -263,6 +273,7 @@ body {
 
 .registration_steps {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 20px;
   line-height: 24px;
   color: #75758A;
@@ -360,6 +371,7 @@ body {
   justify-content: space-between;
   color: #9595AD;
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 14px;
   line-height: 20px;
 }
@@ -471,6 +483,7 @@ body {
 
 .info__name {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
@@ -479,6 +492,7 @@ body {
 
 .info__email {
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 12px;
   line-height: 16px;
 }
@@ -491,6 +505,7 @@ body {
 
 .dashbord__title {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 52px;
   line-height: 64px;
   margin: 0;
@@ -526,6 +541,7 @@ body {
 
 .dashbord__list_item__title {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 24px;
   line-height: 32px;
   margin: 0;
@@ -534,6 +550,7 @@ body {
 
 .dashbord__list_item__text {
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 12px;
   line-height: 16px;
   color: #75758A;
@@ -565,12 +582,14 @@ body {
   padding: 8px 12px;
   margin-right: 8px;
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 20px;
   line-height: 24px;
 }
 
 .dashbord__list_item__price .text {
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 12px;
   line-height: 16px;
   color: #9595AD;
@@ -588,6 +607,7 @@ body {
   cursor: pointer;
 
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
@@ -657,6 +677,7 @@ body {
 
 .popup__title {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 32px;
   line-height: 40px;
   color: #2E2E40;
@@ -680,6 +701,7 @@ body {
 
 .reward__subtitle {
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 14px;
   line-height: 20px;
   color: #9895AD;
@@ -689,6 +711,7 @@ body {
 
 .popup__reward_wrapp .text {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 28px;
   line-height: 32px;
   color: #41DC9A;
@@ -704,6 +727,7 @@ body {
   padding: 8px 12px;
   margin-right: 8px;
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 28px;
   line-height: 32px;
 }
@@ -723,6 +747,7 @@ body {
 
 .popup__subtitle {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 24px;
   line-height: 32px;
   color: #2E2E40;
@@ -861,6 +886,7 @@ body {
 
 .affiliate_program__no_friends_added .affiliate_program__title {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 32px;
   line-height: 40px;
   text-align: center;
@@ -945,6 +971,7 @@ body {
 .affiliate_program__friends_list .input__search input::placeholder  {
   color: #2E2E40;
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 14px;
   line-height: 20px;
 }
@@ -981,6 +1008,7 @@ body {
 .statistics__list__item:not(.__header) .__name,
 .affiliate_program__friends_list__item:not(.__header) .__name {
   font-weight: bold;
+  font-family: Raleway-Medium;
   padding-left: 32px;
 }
 
@@ -990,6 +1018,7 @@ body {
   display: block;
   background: linear-gradient(180deg, #67FFBE 0%, #41DC9A 100%);
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 10px;
   line-height: 24px;
   color: #fff;
@@ -1005,6 +1034,7 @@ body {
   padding: 11px 0;
   border-bottom: 1px solid #ECECF4;
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 12px;
   line-height: 16px;
 }
@@ -1143,6 +1173,7 @@ body {
 
 .tab__title {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 28px;
   line-height: 32px;
   color: #9595AD;
@@ -1220,6 +1251,7 @@ body {
   padding: 11px 0;
   border-bottom: 1px solid #ECECF4;
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 12px;
   line-height: 16px;
 }
@@ -1236,6 +1268,7 @@ body {
 
 .statistics__list__item:not(.__header) .__name_offers {
   font-weight: bold;
+  font-family: Raleway-Medium;
 }
 
 .statistics__list__item:not(.__header) .__status {
@@ -1329,6 +1362,7 @@ body {
 
 .profile__name {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 32px;
   line-height: 40px;
   margin-bottom: 16px;
@@ -1342,6 +1376,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
+  font-family: Raleway-Medium;
   color: #2E2E40;
 }
 
@@ -1359,6 +1394,7 @@ body {
 
 .card__title {
   font-weight: bold;
+  font-family: Raleway-Medium;
   font-size: 28px;
   line-height: 32px;
   margin-bottom: 40px;
@@ -1394,6 +1430,7 @@ body {
   bottom: 16px;
   left: 20px;
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 18px;
   line-height: 28px;
   color: #2E2E40;
@@ -1438,6 +1475,7 @@ body {
   border: 1px solid #E8E8ED;
   border-radius: 16px;
   font-weight: 600;
+  font-family: Raleway-Medium;
   font-size: 14px;
   line-height: 20px;
   color: #4163DC;
