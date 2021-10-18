@@ -95,7 +95,7 @@ function vanillaSelectBox(domSelector, options) {
     this.forbidenAttributes = ["class", "selected", "disabled", "data-text", "data-value", "style"];
     this.forbidenClasses = ["active", "disabled"];
     this.userOptions = {
-        maxWidth: 500,
+        maxWidth: 'auto',
         minWidth: -1,
         maxHeight: 400,
         translations: { "all": "All", "items": "items", "selectAll": "Выбрать всё", "clearAll": "Сбросить всё" },

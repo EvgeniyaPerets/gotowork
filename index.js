@@ -29,3 +29,4 @@ regis.addEventListener('click', e =>{
     e.preventDefault()
     document.location = 'file:///home/engenia/Documents/gotowork/template/registration.html'
 })
+ 
