@@ -551,7 +551,6 @@ body {
 }
 
 .dashbord__list_item__text {
-  font-weight: 600;
   font-family: Raleway-Medium;
   font-size: 12px;
   line-height: 16px;
@@ -590,7 +589,6 @@ body {
 }
 
 .dashbord__list_item__price .text {
-  font-weight: 600;
   font-family: Raleway-Medium;
   font-size: 12px;
   line-height: 16px;
@@ -670,7 +668,7 @@ body {
 
 .popup__close {
   width: 89px;
-  height: 40px;
+  height: 44px;
   position: absolute;
   top: 48px;
   right: 40px;
@@ -783,7 +781,7 @@ body {
   padding: 6px 24px;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+  cursor: text;
 }
 
 .ref_link__text {
@@ -968,6 +966,14 @@ body {
 .affiliate_program__friends_list .input__search input:focus,
 .affiliate_program__friends_list .input__search input:active {
   padding: 20px 24px;
+}
+
+
+
+.affiliate_program__friends_list .input__search input:valid::placeholder,
+.affiliate_program__friends_list .input__search input:focus::placeholder,
+.affiliate_program__friends_list .input__search input:active::placeholder {
+  color: transparent;
 }
 
 .affiliate_program__friends_list .input__search input::placeholder  {
@@ -1505,7 +1511,7 @@ body {
 }
 
 .edit_profile .add_card {
-  width: 118px;
+  width: 128px;
 }
 
 .add_new_card .popup__close {
@@ -1516,7 +1522,7 @@ body {
   width: 100%;
 }
 .edit_profile .popup__close {
-  right: 134px;
+  right: 144px;
 }
 
 .edit_profile .input__wrapper {
@@ -1708,6 +1714,7 @@ body {
   .friends_stats__body .statistics__list__item,
   .statistics__list__item {
     grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #ECECF4;
   }
 
   .my_stats__body .statistics__list__item:not(.__header) .__date {
@@ -1716,12 +1723,15 @@ body {
   .my_stats__body .statistics__list__item:not(.__header) .__id {
     order: 2;
     margin-bottom: 24px;
+    margin-left: auto;
   }
   .my_stats__body .statistics__list__item:not(.__header) .__name_offers {
     order: 3;
   }
   .my_stats__body .statistics__list__item:not(.__header) .__reward {
     order: 4;
+    margin-left: auto;
+    margin-bottom: 10px;
   }
   .my_stats__body .statistics__list__item:not(.__header) .__status {
     order: 1;
@@ -1731,6 +1741,7 @@ body {
   .friends_stats__body .statistics__list__item:not(.__header) .__id {
     order: 2;
     margin-bottom: 24px;
+    margin-left: auto;
   }
   .friends_stats__body .statistics__list__item:not(.__header) .__date {
     order: 6;
@@ -1746,6 +1757,8 @@ body {
   }
   .friends_stats__body .statistics__list__item:not(.__header) .__reward {
     order: 5;
+    margin-left: auto;
+    margin-bottom: 10px;
   }
   .friends_stats__body .statistics__list__item:not(.__header) .__status {
     order: 1;
@@ -1992,8 +2005,7 @@ body {
   }
 
   .tab__title.my_stats {
-    margin-bottom: 12px;
-    margin-right: 0;
+    margin-right: 16px;
   }
 
   .statistics__title {
@@ -2001,8 +2013,12 @@ body {
   }
 
   .tab__titles {
-    flex-direction: column;
     margin-bottom: 14px;
+    overflow: auto;
+  }
+
+  .tab__titles::-webkit-scrollbar {
+    width: 0;
   }
 
   .card__wrapp .main__button {
