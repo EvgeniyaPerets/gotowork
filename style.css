@@ -642,6 +642,17 @@ body {
   bottom: 0;
 }
 
+@media (min-width: 841px) and (max-width: 980px) {
+  .popup__wrapp {
+    width: 71%;
+  }
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+  .popup__wrapp {
+    width: 61%;
+  }
+}
+
 .popup {
   background-color: #fff;
   border-top-left-radius: 15px;
