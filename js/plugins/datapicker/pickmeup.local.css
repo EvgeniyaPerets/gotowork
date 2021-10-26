@@ -92,7 +92,11 @@
 
 @media (max-width: 840px) {
     .pickmeup {
-        left: 16px !important;
+        left: 43px !important;
+    }
+}
+@media (max-width: 1200px) {
+    .pickmeup {
         z-index: 10;
         width: 290px;
         height: 600px;
