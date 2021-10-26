@@ -19,10 +19,8 @@ btnsTabs.forEach(btn => {
 
 document.addEventListener('DOMContentLoaded', event =>  {
     const widthScreen = document.documentElement.clientWidth
-    console.log(document.querySelector('.tab__titles'));
     if (widthScreen < 400) {
         document.querySelector('.tab__titles').style.width = `${widthScreen - 40}px`
-        // document.querySelector('.tab__titles').style.width = '${widthScreen - 40}px'
     }
 })
 
